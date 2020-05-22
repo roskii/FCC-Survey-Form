@@ -1,0 +1,23 @@
+title
+
+description
+
+form
+
+name
+
+email (correct or HTML5 validation error)
+
+age (number or error; min-max or error)
+
+dropdown (Full Time Employed, Freelancer, Unemployed, Retired)
+
+radio ("Where do you primarily get financial advice from?" Financial Advisor, Family, Internet)
+
+dropdown ("How many months of expenses can you survive on with your current savings?" 1 month, 2-3 months, 4-6 months, more than 6 months)
+
+checkboxes ("What types of finances / products do you currently have on hand?" Emergency Fund, TFSA, RA/Pension/Provident Fund, Share Investments, Retail Bonds)
+
+textarea ("What is your main goal for your finances in the next 6-12 months?" - 'Enter your comment here...')
+
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Steven Roberts">
+    <meta name="description" content="Project #3 of freeCodeCamp's Responsive Web Design course - Product Landing Page">
+    
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <h1 id="title"><strong>Pixel</strong> Personal Finance Survey</h1>
+        <p id="description">Thank you for taking the time to share your personal finance story</p>
+    </header>
+    <form id="survey-form" action="/survey-form-page" method="post">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" name="user_name" class="form-box" placeholder="Enter your name" required>           
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" name="user_email" class="form-box" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="age">Age</label>
+            <input id="number" type="number" name="user_age" class="form-box" placeholder="Select your age" min="18" max="115">
+        </div>
+        <div class="form-group">
+            <label id="status-label" for="status">What is your current career status?</label>
+            <select id="dropdown" name="role" class="form-box">
+                <option disabled selected value>Select current status</option>
+                <option value="student">Full Time Employed</option>
+                <option value="job">Freelancer</option>
+                <option value="learner">Unemployed</option>
+                <option value="preferNo">Retired</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <fieldset>
+                <label>Where do you primarily get financial advice from?</label>
+                <label id="list-label"><input id="source" name="source_type" class="input-radio" value="Financial Advisor" type="radio" checked>Financial Advisor</label>
+                <label id="list-label"><input id="source" name="source_type" class="input-radio" value="Family" type="radio" checked>Family</label>
+                <label id="list-label"><input id="source" name="source_type" class="input-radio" value="Internet" type="radio" checked>Internet</label>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <label>How many months of expenses can you survive on with your current savings?</label>
+            <select id="dropdown" name="savings" class="form-box">
+                <option disabled selected value>Select the applicable value</option>
+                <option value="option_1">1 month</option>
+                <option value="option_2">2-3 months</option>
+                <option value="option_4">4-6 months</option>
+                <option value="option_6">6+ months</option>
+                <option value="option_none">I don't have savings</option>
+            </select>
+        </div>  
+        <div class="form-group">
+                <label>What types of finances / products do you currently have on hand?</label>
+                <label id="list-label"><input name="goal_EF" class="input-checkbox" value="Emergency Fund" type="checkbox">Emergency Fund</label>
+                <label id="list-label"><input name="goal_TFSA" class="input-checkbox" value="TFSA" type="checkbox">TFSA</label>
+                <label id="list-label"><input name="goal_RA" class="input-checkbox" value="RA/Pension/Provident Funds" type="checkbox"d>RA/Pension/Provident Funds</label>
+                <label id="list-label"><input name="goal_SI" class="input-checkbox" value="Share Investments" type="checkbox">Share Investments</label>
+                <label id="list-label"><input name="goal_RB" class="input-checkbox" value="Retail Bonds" type="checkbox">Retail Bonds</label>
+        </div>
+        <div class="form-group">
+                <label id="comments-label" for="comments">What is your main goal for your finances in the next 6-12 months?</label>
+                <textarea id="comments" class="input-textarea" name="comment">Enter your goals here</textarea>
+        </div>
+        <div class="form-group">
+            <button id="submit" type="submit" class="submit-button">Submit</button>
+        </div>
+    </form>
+</div>
+   
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>
